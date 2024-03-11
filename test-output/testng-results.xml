@@ -1,197 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="0" failed="4" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-06T12:27:54 IST" name="Default suite" finished-at="2024-03-06T12:28:23 IST" duration-ms="28899">
+  <suite started-at="2024-03-11T15:27:52 IST" name="Default suite" finished-at="2024-03-11T15:28:10 IST" duration-ms="17703">
     <groups>
     </groups>
-    <test started-at="2024-03-06T12:27:54 IST" name="Default test" finished-at="2024-03-06T12:28:23 IST" duration-ms="28899">
-      <class name="com.qa.opencart.tests.AccountsPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@2b56f5f8]" started-at="2024-03-06T12:27:54 IST" name="setup" finished-at="2024-03-06T12:28:15 IST" duration-ms="21046" status="PASS">
+    <test started-at="2024-03-11T15:27:52 IST" name="Default test" finished-at="2024-03-11T15:28:10 IST" duration-ms="17703">
+      <class name="com.qa.opencart.tests.LoginPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@616b241a]" started-at="2024-03-11T15:27:52 IST" name="setup" finished-at="2024-03-11T15:28:04 IST" duration-ms="12066" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="accPageSetup()[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@2b56f5f8]" started-at="2024-03-06T12:28:15 IST" name="accPageSetup" finished-at="2024-03-06T12:28:22 IST" duration-ms="6645" status="PASS">
+        <test-method signature="loginPageTitleTest()[pri:1, instance:com.qa.opencart.tests.LoginPageTest@616b241a]" started-at="2024-03-11T15:28:04 IST" name="loginPageTitleTest" finished-at="2024-03-11T15:28:05 IST" duration-ms="249" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- accPageSetup -->
-        <test-method signature="accountHeaderTest()[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@2b56f5f8]" started-at="2024-03-06T12:28:22 IST" name="accountHeaderTest" finished-at="2024-03-06T12:28:22 IST" duration-ms="145" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.qa.opencart.utils.ElementUtil.waitForElementsVisible(org.openqa.selenium.By, int)" because "this.eleUtil" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.opencart.utils.ElementUtil.waitForElementsVisible(org.openqa.selenium.By, int)" because "this.eleUtil" is null
-at com.qa.opencart.pages.AccountsPage.getAccountPageHeadersList(AccountsPage.java:60)
-at com.qa.opencart.tests.AccountsPageTest.accountHeaderTest(AccountsPageTest.java:42)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method signature="loginPageUrlTest()[pri:2, instance:com.qa.opencart.tests.LoginPageTest@616b241a]" started-at="2024-03-11T15:28:06 IST" name="loginPageUrlTest" finished-at="2024-03-11T15:28:06 IST" duration-ms="46" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- accountHeaderTest -->
-        <test-method signature="accountsPageTitleTest()[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@2b56f5f8]" started-at="2024-03-06T12:28:22 IST" name="accountsPageTitleTest" finished-at="2024-03-06T12:28:22 IST" duration-ms="7" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.qa.opencart.utils.ElementUtil.waitForTitleIsAndFetch(int, String)" because "this.eleUtil" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.opencart.utils.ElementUtil.waitForTitleIsAndFetch(int, String)" because "this.eleUtil" is null
-at com.qa.opencart.pages.AccountsPage.getAccPageTitle(AccountsPage.java:35)
-at com.qa.opencart.tests.AccountsPageTest.accountsPageTitleTest(AccountsPageTest.java:22)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- loginPageUrlTest -->
+        <test-method signature="forgortPasswordLinkTest()[pri:3, instance:com.qa.opencart.tests.LoginPageTest@616b241a]" started-at="2024-03-11T15:28:06 IST" name="forgortPasswordLinkTest" finished-at="2024-03-11T15:28:06 IST" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- accountsPageTitleTest -->
-        <test-method signature="accountsPageUrlTest()[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@2b56f5f8]" started-at="2024-03-06T12:28:22 IST" name="accountsPageUrlTest" finished-at="2024-03-06T12:28:22 IST" duration-ms="6" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.qa.opencart.utils.ElementUtil.waitForURLContainsAndFetch(int, String)" because "this.eleUtil" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.opencart.utils.ElementUtil.waitForURLContainsAndFetch(int, String)" because "this.eleUtil" is null
-at com.qa.opencart.pages.AccountsPage.getAccPageUrl(AccountsPage.java:42)
-at com.qa.opencart.tests.AccountsPageTest.accountsPageUrlTest(AccountsPageTest.java:29)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- forgortPasswordLinkTest -->
+        <test-method signature="loginTest()[pri:4, instance:com.qa.opencart.tests.LoginPageTest@616b241a]" started-at="2024-03-11T15:28:06 IST" name="loginTest" finished-at="2024-03-11T15:28:10 IST" duration-ms="3779" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- accountsPageUrlTest -->
-        <test-method signature="isLogoutLinkExistTest()[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@2b56f5f8]" started-at="2024-03-06T12:28:22 IST" name="isLogoutLinkExistTest" finished-at="2024-03-06T12:28:22 IST" duration-ms="9" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.qa.opencart.utils.ElementUtil.waitForElementVisible(org.openqa.selenium.By, int)" because "this.eleUtil" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.opencart.utils.ElementUtil.waitForElementVisible(org.openqa.selenium.By, int)" because "this.eleUtil" is null
-at com.qa.opencart.pages.AccountsPage.isLogoutLinkExist(AccountsPage.java:49)
-at com.qa.opencart.tests.AccountsPageTest.isLogoutLinkExistTest(AccountsPageTest.java:37)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isLogoutLinkExistTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@2b56f5f8]" started-at="2024-03-06T12:28:22 IST" name="teardown" finished-at="2024-03-06T12:28:23 IST" duration-ms="491" status="PASS">
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@616b241a]" started-at="2024-03-11T15:28:10 IST" name="teardown" finished-at="2024-03-11T15:28:10 IST" duration-ms="267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.qa.opencart.tests.AccountsPageTest -->
+      </class> <!-- com.qa.opencart.tests.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

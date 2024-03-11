@@ -6,12 +6,9 @@
       <class name="com.qa.opencart.tests.AccountsPageTest">
         <methods>
           <include name="accPageSetup"/>
-          <include name="accountsPageTitleTest"/>
           <include name="setup"/>
           <include name="accountsPageUrlTest"/>
           <include name="teardown"/>
-          <include name="accountHeaderTest"/>
-          <include name="isLogoutLinkExistTest"/>
         </methods>
       </class> <!-- com.qa.opencart.tests.AccountsPageTest -->
     </classes>

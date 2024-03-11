@@ -19,6 +19,7 @@ public class AccountsPage {
 	// 2. Page constructor
 	public AccountsPage(WebDriver driver) {
 		this.driver = driver;
+		eleUtil=new ElementUtil(driver);
 	}
 
 	// 3 Private BY loctaors
