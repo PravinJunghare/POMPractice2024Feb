@@ -16,19 +16,20 @@ public class DriverFactory {
 	public WebDriver driver;
 	public Properties prop;
 	public OptionsManager optionManager;
-	
+
 	public static String highlight;
-	
+
 	/**
 	 * This method intilize the driver on the basis of browser name
+	 * 
 	 * @param browserName
-	 * @return  the driver
+	 * @return the driver
 	 */
 
 	public WebDriver initDriver(Properties prop) {
 		OptionsManager optionManager = new OptionsManager(prop);
-		highlight=prop.getProperty("highlight").trim();
-		String browserName=prop.getProperty("browser").toLowerCase().trim();
+		highlight = prop.getProperty("highlight").trim();
+		String browserName = prop.getProperty("browser").toLowerCase().trim();
 		System.out.println("browser name is : " + browserName);
 		if (browserName.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver(optionManager.getChromeOptions());
@@ -47,34 +48,31 @@ public class DriverFactory {
 		}
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		//driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
+		// driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
 		driver.get(prop.getProperty("url"));
 		return driver;
 
 	}
-	
-	
+
 	/*
 	 * this method is used to load properties file
+	 * 
 	 * @r
 	 */
-	
-	public Properties initProp()
-	{
-		prop=new Properties();
+
+	public Properties initProp() {
+		prop = new Properties();
 		try {
-			FileInputStream ip= new FileInputStream("./src/main/resources/config/config.properties");
+			FileInputStream ip = new FileInputStream("./src/main/resources/config/config.properties");
 			prop.load(ip);
-			
-			
-			
+
 		} catch (FileNotFoundException e) {
-			
+
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		return prop;
 	}
-	
+
 }

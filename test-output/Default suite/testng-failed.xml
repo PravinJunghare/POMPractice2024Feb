@@ -5,9 +5,9 @@
     <classes>
       <class name="com.qa.opencart.tests.AccountsPageTest">
         <methods>
+          <include name="searchProductTest" invocation-numbers="2 3"/>
           <include name="accPageSetup"/>
           <include name="setup"/>
-          <include name="accountsPageUrlTest"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- com.qa.opencart.tests.AccountsPageTest -->

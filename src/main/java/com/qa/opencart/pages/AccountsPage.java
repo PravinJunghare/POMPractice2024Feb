@@ -74,4 +74,26 @@ public class AccountsPage {
 		}
 		return accHeaderValList;
 	}
+	
+	public SearchPage performSearch(String searchKey)
+	{
+		if(isSearchExist())
+		{
+		
+		eleUtil.doSendKeys(search, searchKey);
+		eleUtil.doClick(searchIcon);
+		return new SearchPage(driver);
+		}
+		else
+		{
+			System.out.println("Search Field is not present on the page...");
+			
+			return null;
+		}
+	
+		
+	}
+	
+	
+	
 }
